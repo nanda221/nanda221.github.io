@@ -107,22 +107,18 @@ print('\033[4;1H\033[1;4;32mHello,world\033[0m')
 
 原理归原理，但这种“粗活”有很多前辈已经帮我们代劳了，封装成更高级、更语义化的社区类库。
 
-#### NodeJS——chalk
-
-[chalk](https://github.com/chalk/chalk)是非常流行的NodeJS命令行润色库，支持文字样式相关的润色，如字体色、背景色、高亮、下划线等，而且支持非常优雅的Property Chain。
-
-#### Python-colorama
-
-[colorama](https://pypi.python.org/pypi/colorama/0.3.9)是一个跨平台的Python命令行润色模块。[这里](http://blog.csdn.net/qianghaohao/article/details/52117082)有一片文章介绍了如何使用。
+* [chalk](https://github.com/chalk/chalk)是非常流行的NodeJS命令行润色库，支持文字样式相关的润色，如字体色、背景色、高亮、下划线等，而且支持非常优雅的Property Chain。
+* [colorama](https://pypi.python.org/pypi/colorama/0.3.9)是一个跨平台的Python命令行润色模块。[这里](http://blog.csdn.net/qianghaohao/article/details/52117082)有一篇文章介绍了如何使用。
 
 
 ## 参考资料和延伸阅读
 
 本文参考：
-[深入理解shell颜色输出与控制](http://www.jb51.net/article/100729.htm)
-[Python终端字符颜色](http://blog.csdn.net/qianghaohao/article/details/52117082)
 
-[命令行如何实现select](http://blog.csdn.net/xia_xia0919/article/details/50559757)等更多的交互体验功能，有兴趣的朋友可以继续做延伸阅读，原理大致类似，再和命令行参数解析模块搭配使用可以构建一个完整的CLI交互模块，如NodeJS技术栈的[Inquirer.js](https://github.com/SBoudrias/Inquirer.js) + [chalk](https://github.com/chalk/chalk) + [yargs](https://github.com/yargs/yargs)，非常强大。
+* [深入理解shell颜色输出与控制](http://www.jb51.net/article/100729.htm)
+* [Python终端字符颜色](http://blog.csdn.net/qianghaohao/article/details/52117082)
+
+[《命令行如何实现select》](http://blog.csdn.net/xia_xia0919/article/details/50559757)等更多的交互体验功能，有兴趣的朋友可以继续做延伸阅读，原理大致类似，再和命令行参数解析模块搭配使用可以构建一个完整的CLI交互模块，如NodeJS技术栈的[Inquirer.js](https://github.com/SBoudrias/Inquirer.js) + [chalk](https://github.com/chalk/chalk) + [yargs](https://github.com/yargs/yargs)，非常强大。
 
 
 
