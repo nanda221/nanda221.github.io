@@ -1,0 +1,7 @@
+echo '\033[0;30;41mHello World!'
+echo 'The text is effected by former style setting.'
+echo '\033[0;32;41m'
+echo '\033[32mtext style'
+echo '\033[41mtext style'
+echo '\033[0mtext style'
+echo 'The text style is reset now.'
