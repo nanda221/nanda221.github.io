@@ -2,7 +2,7 @@
 layout: post
 title:  "终端内容输出的体验提升，附Node.js和Python的常用套路"
 subtitle: "Make the printer colorful"
-date:   2017-01-04 23:59:59 +0800
+date:   2018-01-04 23:59:59 +0800
 background: '/img/posts/06.jpg'
 ---
 

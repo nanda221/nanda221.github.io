@@ -2,7 +2,7 @@
 layout: post
 title:  "微服务编配——Conductor"
 subtitle: "MicroService Orchestration By Conductor"
-date:   2017-01-12 23:59:59 +0800
+date:   2018-01-12 23:59:59 +0800
 background: '/img/posts/05.jpg'
 ---
 
