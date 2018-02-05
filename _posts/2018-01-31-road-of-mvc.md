@@ -69,12 +69,12 @@ Ajax对重服务端的MVC架构产生了巨大的影响，因为无论从产品�
 
 下面再引出一个时代的眼泪：[RIA](https://zh.wikipedia.org/zh-hans/RIA)(Rich Internet Applications)。下图是RIA下的胖客户端MVC架构：
 
-![MVC架构图]()
+<img style="width: 80%;" src="https://img.alicdn.com/tfs/TB1ntFoXQyWBuNjy0FpXXassXXa-1632-1224.jpg" />
 
 图中可以看到，服务端输出页面到浏览器端，后续的用户操作由Ajax请求代替了页面提交。MVC在服务端和客户端的理解出现了分化。
 
-* 在服务端视角，MVC相较于之前并没有明显改动，只是在Ajax场景输出物变了，是通过输出数据而不是结构来影响View。另一方面，接口回归到数据，具有了复用性，可以提供给不同的视图出口(多端)使用。
-* 在客户端视角，Ajax的目的就是为了获取Model数据，View的拼装和重绘由客户端来完成。所以，Ajax请求被整体抽象成了M，而客户端的JS逻辑——响应用户交互行为、发起响应Ajax，根据model渲染View，这正符合前文对C职责的描述，所以在客户端也出现了MVC小闭环。另外，由于浏览器端需要根据数据来渲染页面内容，这一时期涌现了大批动态模板语言，EJS、xTemplate、Nunjucks...他们通常同时支持浏览器和服务端(Node)渲染。
+* 在服务端视角，MVC相较于之前并没有明显改动，只是在Ajax场景输出物变了，是通过输出数据而不是结构来影响View(接口回归到数据，具有了复用性，可以提供给不同的视图出口如多端来使用)。在这种场景下，整个浏览器端在服务端眼里被抽象成了V，内部如何使用接口服务端并不关心。参考图中的M1/V1/C1。
+* 在客户端视角，Ajax的目的就是为了获取Model数据，View的拼装和重绘由客户端来完成。所以，Ajax请求被整体抽象成了M，而客户端的JS逻辑——响应用户交互行为、发起响应Ajax，根据model渲染View，这正符合前文对C职责的描述，所以在客户端也出现了MVC小闭环。参考图中的M2/V2/C2。另外，由于浏览器端需要根据数据来渲染页面内容，这一时期涌现了大批动态模板语言，EJS、xTemplate、Nunjucks...他们通常同时支持浏览器和服务端(Node)渲染。
 
 这种“混合型”MVC在历史进程中存在了很久，甚至仍是后台系统的主流设计。
 
@@ -85,9 +85,9 @@ Ajax对重服务端的MVC架构产生了巨大的影响，因为无论从产品�
 
 MVP架构图：
 
-![MVC架构图]()
+<img style="width: 60%;transform:rotate(-90deg); margin-top: -50px; margin-bottom: -50px;" src="https://img.alicdn.com/tfs/TB1tZtpXGmWBuNjy1XaXXXCbXXa-1224-1632.jpg" />
 
-这张图是否似曾相识？是不是和前文RIA的架构很像？的确，RIA时期的B/S软件开发已经暗合了MVP模式：Android开发中的三方类库特别创造了Presenter这个具体类，并用Java接口的方式提供到View；B/S场景的服务端同样构建了这样的controller层，并以Ajax接口向View输出数据。
+这张图是否似曾相识？是不是和前文RIA的架构很像？的确，RIA时期的B/S软件开发已经暗合了MVP模式：Android的类库社区特别创造了Presenter这个具体类，并用Java接口的方式提供到View；B/S场景的服务端同样构建了这样的controller层，并以Ajax接口向View输出数据。
 
 小结一下这个阶段的特点：Ajax引领前端变革，RIA下的性能和体验提升，MVP模式。
 
