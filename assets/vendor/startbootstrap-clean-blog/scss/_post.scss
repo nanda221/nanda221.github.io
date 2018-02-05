@@ -91,6 +91,9 @@
   font-weight: bold;
   line-height: 1.4;
 }
+.markdown-body p {
+  line-height: 1.8;
+}
 .markdown-body p,
 .markdown-body blockquote,
 .markdown-body ul,
@@ -156,6 +159,7 @@
   padding: 0 15px;
   color: #777;
   border-left: 4px solid #ddd;
+  font-style: normal;
 }
 .markdown-body table {
   display: block;
